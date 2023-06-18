@@ -1,5 +1,6 @@
 package stackt_trace;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -22,7 +23,7 @@ public class StackTraceTest {
         int factorial;
         if (n <= 1) factorial = 1;
         else factorial = n * factorial(n - 1);
-        System.out.printf("return " + factorial);
+        System.out.println("return " + factorial);
 
         return factorial;
     }
