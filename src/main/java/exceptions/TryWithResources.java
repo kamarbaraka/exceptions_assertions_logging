@@ -56,6 +56,14 @@ public class TryWithResources {
             System.out.println("i'm very pretty");
         }
     }
+
+    public static void main(String[] args) {
+
+        var file = new TryWithResources("src/main/resources/test.txt", "src/main/resources/out.txt");
+
+        file.read();
+        file.printOut();
+    }
 }
 
 class TryWithResourcesTest{
